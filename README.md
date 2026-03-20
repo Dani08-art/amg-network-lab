@@ -21,26 +21,26 @@ This project was built from scratch as a hands-on learning tool to consolidate p
 ```
                         [R-ISP]
                            |
-                      Serial WAN
+                      Serial WAN                
                            |
-                     [R-HQ-EDGE]
+                     [R-HQ-EDGE]----------------------[R-MED] ── [SW-MED] ── Users
                     /            \
               Gi0/0              Gi0/1
                 |                  |
-           [DSW1-HQ] ══ Po1 ══ [DSW2-HQ]
-          (L3 Switch)  EtherChannel  (L3 Switch)
-         /    |    \              /    |    \
-      ASW1  ASW2  ASW3          ASW1 ASW2  ASW3
-       |      |     |
-    ADMIN   ENG   OPS
-     FIN   SALES   IT
-     RRHH         GUEST
+           [DSW1-HQ] ══ Po1 ══ [DSW2-HQ]------------
+          (L3 Switch)  EtherChannel  (L3 Switch)   |
+         /    |    \              /    |    \      |
+      ASW1  ASW2  ASW3          ASW1 ASW2  ASW3    |
+       |      |     |                              |
+    ADMIN   ENG   OPS          |-------------------|
+     FIN   SALES   IT          |
+     RRHH         GUEST        |
                            [ASW4-HQ]
                                |
                            [SRV-HQ]
                         DHCP/DNS/NTP/Syslog
 
-                     [R-MED] ── [SW-MED] ── Users
+                     
 ```
 
 ---
@@ -236,4 +236,5 @@ Currently completing CCNA training — routing, switching, WAN, security
 
 📧 Daniel.vargasc02@outlook.com  
 🔗 [GitHub](https://github.com/Dani08-art)  
-🔗 LinkedIn: [add your LinkedIn URL]
+🔗 LinkedIn: www.linkedin.com/in/daniel-vargas-644ab820a
+
